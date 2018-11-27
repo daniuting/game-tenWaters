@@ -1,0 +1,25 @@
+{
+  "name": "ten-water",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18917578486/ten-waters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18917578486/ten-waters/issues"
+  },
+  "homepage": "https://github.com/18917578486/ten-waters#readme"
+}
