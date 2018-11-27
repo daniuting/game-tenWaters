@@ -7,10 +7,16 @@
     "webpack": "^4.26.1",
     "webpack-cli": "^3.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "style-loader": "^0.23.1",
+    "webpack-dev-server": "^3.1.10"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
