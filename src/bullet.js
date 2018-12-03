@@ -37,16 +37,16 @@ export default class bullet {
         this.run = setInterval (() => {
             switch (this.type) {
                 case 'left':
-                    this.left = this.left - 5;
+                    this.left = this.left - 8;
                     break;
                 case 'right':
-                    this.left = this.left + 5;
+                    this.left = this.left + 8;
                     break;
                 case 'top':
-                    this.top = this.top - 5;
+                    this.top = this.top - 8;
                     break;
                 case 'bottom':
-                    this.top = this.top + 5;
+                    this.top = this.top + 8;
                     break;
             }
             
@@ -69,9 +69,14 @@ export default class bullet {
         this.bullet.remove();
         this.isDestoryed = true;
 
+        let isSuccess = this.parent.waterArray.every(item => {
+            return item.level === 0;
+        });
         let bulletLength = this.parent.bulletArray.filter(item => !item.isDestoryed).length;
-        if (!bulletLength && this.parent.water === 0) {
-            console.log('你输了！');
+        if (!bulletLength && this.parent.water === 0 && !isSuccess) {
+            alert('你输了！');
+        } else if (isSuccess && !bulletLength) {
+            alert('你赢了！');
         }
     }
 }

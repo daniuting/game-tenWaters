@@ -22,8 +22,8 @@ export default class Water {
             if (this.level === 0 || this.parent.water === 0) {
                 return;
             }
-            this.parent.update(this);
             this.update();
+            this.parent.update(this);
         }
 
         this.img.addEventListener('animationend', () => {
